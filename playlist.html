@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -25,9 +24,19 @@
 
     <script>
         const songs = [
-            "music/song1.mp3", "music/song2.mp3", "music/song3.mp3", "music/song4.mp3", 
-            "music/song5.mp3", "music/song6.mp3", "music/song7.mp3", "music/song8.mp3", 
-            "music/song9.mp3", "music/song10.mp3", "music/song11.mp3", "music/song12.mp3", "music/song13.mp3"
+            "https://audio.jukehost.co.uk/XLQBa0CUgBpbV5hyzpvpbBKoij1oC51K",
+            "https://audio.jukehost.co.uk/JPVl7o0SoGnMOASlGCv0ZwUEsyLwGxrm",
+            "https://audio.jukehost.co.uk/0j6xnq36slNDuyW2usaRoZNiLPvmJD96",
+            "https://audio.jukehost.co.uk/NAooxiM9CFAHUIAIK8JD6CvA40iAbLkK",
+            "https://audio.jukehost.co.uk/a4o4Up31PvpW8GzpclH2NLAv1m4WtBYI",
+            "https://audio.jukehost.co.uk/NNsWpBFcrR2k0sFCfMPivQhn9DmbvT2A",
+            "https://audio.jukehost.co.uk/wHKGg7nKvxvsvfWi1gdtHDYoPuhpIGmX",
+            "https://audio.jukehost.co.uk/HynZwSaVOO2c4eX5mIiJaMfZSQnLmwWs",
+            "https://audio.jukehost.co.uk/N6UNR2MrQME7iCJJ58t4JcSaLw9miQpK",
+            "https://audio.jukehost.co.uk/fgL7IfcHK56fgtM5L55muVsbuk2y3vnt",
+            "https://audio.jukehost.co.uk/JBn5G0lUoWSj1L65xlzGdLftCQeh0hgW",
+            "https://audio.jukehost.co.uk/kKeZy4bzwXU66lav9UQjXbc4tmcvUtSZ",
+            "https://audio.jukehost.co.uk/DEBbLVAVodiGv0JNeEuADb1Ihpq6Voy1"
         ];
 
         let currentSongIndex = 0;
@@ -36,7 +45,7 @@
 
         function loadSong(index) {
             audioPlayer.src = songs[index];
-            songTitle.textContent = songs[index].split("/").pop();
+            songTitle.textContent = `Трек ${index + 1}`;
             audioPlayer.play();
         }
 
